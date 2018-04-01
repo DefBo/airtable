@@ -9,14 +9,10 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
 	<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,400italic" rel="stylesheet">
-	
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.9/css/all.css" integrity="sha384-5SOiIsAziJl6AWe0HWRKTXlfcSHKmYV4RBF18PPJ173Kzn7jzMyFuTtk8JA7QQG1" crossorigin="anonymous">
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-	<link href="assets/css/toolkit-light.css" rel="stylesheet">
-    <link href="assets/css/application.css" rel="stylesheet">
-	<link href="assets/css/selectize.default.css" rel="stylesheet">
+	<!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.12.4/css/bootstrap-select.min.css"> -->
 	<link rel="stylesheet" href="css/main.min.css">
-
 </head>
 
 <body>
@@ -132,21 +128,21 @@
 								<div class="dropdown-menu-filter__line">
 									<div class="dropdown-menu__filter-item">
 										<a href="#" class="">
-											<i class="fas fa-times"></i>
+												<i class="fas fa-times fa-xs"></i>
 										</a>
 										<span>Where</span>
 									</div>
-									<select name="" id="" class="filter-select">
-										<option value="1">Name</option>
-										<option value="2">Partners</option>
-										<option value="3">Products Discussed</option>
-										<option value="4">Size of Opportunity</option>
-										<option value="5">Active?</option>
-										<option value="6">Estimated time to close</option>
-										<option value="7">Contracts</option>
-										<option value="8">Contract stage</option>
-										<option value="9">Long text</option>
-									</select>
+									<select>
+										<option selected>Name</option>
+										<option>Partners</option>
+										<option>Products Discussed</option>
+										<option>Size of Opportunity</option>
+										<option>Active</option>
+										<option>Estimated time of close</option>
+										<option>Contracts</option>
+										<option>Contract stage</option>
+										<option>Long text</option>
+									</select>  
 									<select name="" id="" class="filter-select">
 										<option value="1">contains</option>
 										<option value="2">does not contain</option>
@@ -238,30 +234,28 @@
 									<td>
 										<input id="date" type="date" class="date-input"> 
 									</td>
-									<td class="notes-cell">We could partner to make a hot sauce branded with our company logo...</td>
+									<td class="textarea-cell" contentEditable>We could partner to make a hot sauce branded with our company logo...</td>
 									<td contentEditable>$200,000.00</td>
 									<td>
 										<input type="checkbox" name="" id="">
 									</td>
-									<td>
-										<select class="select-period" class="demo-default" placeholder="Select value">
-											<option value="">Select value</option>
-											<option value="1" selected>0-2 months</option>
-											<option value="2">2-6 months</option>
-											<option value="3">6+ months</option>
+									<td class="dropdown-cell">
+										<select class="selectpicker" data-live-search="true">
+											<option data-content="<span class='selectpicker-option period-option-1'>0-2 months</span>" selected>0-2 months</option>
+											<option data-content="<span class='selectpicker-option period-option-2'>2-6 months</span>">2-6 months</option>
+											<option data-content="<span class='selectpicker-option period-option-3'>6+ months</span>">6+ months</option>
 										</select>
 									</td>
 									<td></td>
-									<td>
-										<select class="select-status" class="demo-default" placeholder="Select value">
-											<option value="">Select value</option>
-											<option value="1" selected>Request</option>
-											<option value="2">Negotiation</option>
-											<option value="3">Approval</option>
-											<option value="4">Execution</option>
+									<td class="dropdown-cell">
+										<select class="selectpicker" data-live-search="true">
+											<option data-content="<span class='selectpicker-option stage-option-1'>Request</span>" selected>Request</option>
+											<option data-content="<span class='selectpicker-option stage-option-2'>Negotiation</span>">Negotiation</option>
+											<option data-content="<span class='selectpicker-option stage-option-3'>Approval</span>">Approval</option>
+											<option data-content="<span class='selectpicker-option stage-option-4'>Execution</span>">Execution</option>
 										</select>
 									</td>
-									<td class="notes-cell"></td>
+									<td class="textarea-cell" contentEditable></td>
 								</tr>
 								<tr>
 									<td>FireBasket Deal</td>
@@ -269,30 +263,28 @@
 									<td>
 										<input id="date" type="date" class="date-input">
 									</td>
-									<td class="notes-cell">We could partner to make a hot sauce branded with our company logo...</td>
+									<td class="textarea-cell" contentEditable>We could partner to make a hot sauce branded with our company logo...</td>
 									<td contentEditable>$200,000.00</td>
 									<td>
 										<input type="checkbox" name="" id="">
 									</td>
-									<td>
-										<select class="select-period" class="demo-default" placeholder="Select value">
-											<option value="">Select value</option>
-											<option value="1">0-2 months</option>
-											<option value="2">2-6 months</option>
-											<option value="3" selected>6+ months</option>
-										</select>
-									</td>
+									<td class="dropdown-cell">
+											<select class="selectpicker" data-live-search="true">
+												<option data-content="<span class='selectpicker-option period-option-1'>0-2 months</span>">0-2 months</option>
+												<option data-content="<span class='selectpicker-option period-option-2'>2-6 months</span>" selected>2-6 months</option>
+												<option data-content="<span class='selectpicker-option period-option-3'>6+ months</span>">6+ months</option>
+											</select>
+										</td>
 									<td></td>
-									<td>
-										<select class="select-status" class="demo-default" placeholder="Select value">
-											<option value="">Select value</option>
-											<option value="1">Request</option>
-											<option value="2">Negotiation</option>
-											<option value="3" selected>Approval</option>
-											<option value="4">Execution</option>
+									<td class="dropdown-cell">
+										<select class="selectpicker" data-live-search="true">
+											<option data-content="<span class='selectpicker-option stage-option-1'>Request</span>">Request</option>
+											<option data-content="<span class='selectpicker-option stage-option-2'>Negotiation</span>">Negotiation</option>
+											<option data-content="<span class='selectpicker-option stage-option-3'>Approval</span>">Approval</option>
+											<option data-content="<span class='selectpicker-option stage-option-4'>Execution</span>" selected>Execution</option>
 										</select>
 									</td>
-									<td class="notes-cell"></td>
+									<td class="textarea-cell" contentEditable></td>
 								</tr>
 								<tr>
 									<td>FireBasket Deal</td>
@@ -300,33 +292,34 @@
 									<td>
 										<input id="date" type="date" class="date-input">
 									</td>
-									<td class="notes-cell">We could partner to make a hot sauce branded with our company logo...</td>
+									<td class="textarea-cell" contentEditable>We could partner to make a hot sauce branded with our company logo...</td>
 									<td contentEditable>$200,000.00</td>
 									<td>
 										<input type="checkbox" name="" id="">
 									</td>
-									<td>
-										<select class="select-period" class="demo-default" placeholder="Select value">
-											<option value="">Select value</option>
-											<option value="1">0-2 months</option>
-											<option value="2" selected>2-6 months</option>
-											<option value="3">6+ months</option>
+									<td class="dropdown-cell">
+										<select class="selectpicker" data-live-search="true">
+											<option data-content="<span class='selectpicker-option period-option-1'>0-2 months</span>">0-2 months</option>
+											<option data-content="<span class='selectpicker-option period-option-2'>2-6 months</span>">2-6 months</option>
+											<option data-content="<span class='selectpicker-option period-option-3'>6+ months</span>" selected>6+ months</option>
 										</select>
 									</td>
 									<td></td>
-									<td>
-										<select class="select-status" class="demo-default" placeholder="Select value">
-											<option value="">Select value</option>
-											<option value="1">Request</option>
-											<option value="2">Negotiation</option>
-											<option value="3">Approval</option>
-											<option value="4" selected>Execution</option>
+									<td class="dropdown-cell">
+										<select class="selectpicker" data-live-search="true">
+											<option data-content="<span class='selectpicker-option stage-option-1'>Request</span>">Request</option>
+											<option data-content="<span class='selectpicker-option stage-option-2'>Negotiation</span>">Negotiation</option>
+											<option data-content="<span class='selectpicker-option stage-option-3'>Approval</span>" selected>Approval</option>
+											<option data-content="<span class='selectpicker-option stage-option-4'>Execution</span>">Execution</option>
 										</select>
 									</td>
-									<td class="notes-cell"></td>
+									<td class="textarea-cell" contentEditable></td>
 								</tr>
 							</tbody>
 						</table>
+						
+						
+
 						
 					</div>
 
@@ -338,19 +331,7 @@
 
 	</div>
 
-	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-	<script src="assets/js/popper.min.js"></script>
-    <script src="assets/js/chart.js"></script>
-    <script src="assets/js/tablesorter.min.js"></script>
-    <script src="assets/js/toolkit.js"></script>
-    <script src="assets/js/application.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 	<script src="js/scripts.min.js"></script>
-
-	<script>
-		$(function(){while(window.BS&&window.BS.loader&&window.BS.loader.length){(window.BS.loader.pop())()}})
-	</script>
 
 </body>
 </html>
