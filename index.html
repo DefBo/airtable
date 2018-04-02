@@ -8,10 +8,6 @@
 	<title>Title</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
-	<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,400italic" rel="stylesheet">
-	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.9/css/all.css" integrity="sha384-5SOiIsAziJl6AWe0HWRKTXlfcSHKmYV4RBF18PPJ173Kzn7jzMyFuTtk8JA7QQG1" crossorigin="anonymous">
-	<!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.12.4/css/bootstrap-select.min.css"> -->
 	<link rel="stylesheet" href="css/main.min.css">
 </head>
 
@@ -34,15 +30,16 @@
 				</li>
 				<li class="nav-item nav-oport-tab-wrap">
 					<a class="nav-link active" id="nav-opport-tab" data-toggle="tab" href="#nav-opport" role="tab" aria-controls="nav-opport" aria-selected="true">
-						Opportunities 
+						<label id="first-tab-name" class="tab-name">Opportunities</label>
+						<input id="first-tab-input" type="text" value="Opportunities" style="display: none">
 						<div class="dropdown oport-tab-dropdown">
-							<button class="dropdown-toggle dropdown-toggle-subtub" type="button" id="dropdownMenuSubTub" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true"></button>
-							<div class="dropdown-menu dropdown-menu-right dropdown-menu-subtub" aria-labelledby="dropdownMenuSubTub">
-								<button class="dropdown-item" type="button"><i class="fas fa-pencil-alt"></i>Rename table</button>
-								<button class="dropdown-item" type="button"><i class="fas fa-info-circle"></i>Edit description</button>
-								<button class="dropdown-item" type="button"><i class="fas fa-copy"></i>Duplicate table</button>
-								<button class="dropdown-item" type="button"><i class="fas fa-trash"></i>Delete table</button>
-							</div>
+							<button class="dropdown-toggle dropdown-toggle-subtub" type="button" id="context-tab-link"></button>
+						</div>
+						<div class="dropdown-menu dropdown-menu-subtab">
+							<button class="dropdown-item" id="rename-table-btn" type="button"><i class="fas fa-pencil-alt"></i>Rename table</button>
+							<button class="dropdown-item" type="button"><i class="fas fa-info-circle"></i>Edit description</button>
+							<button class="dropdown-item" type="button"><i class="fas fa-copy"></i>Duplicate table</button>
+							<button class="dropdown-item" type="button"><i class="fas fa-trash"></i>Delete table</button>
 						</div>
 					</a>
 				</li>
@@ -69,13 +66,13 @@
 				<div class="tab-content__header">
 						
 					<div class="dropdown show">
-						<a class="tab-content__header-link tab-content__header-link--view" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+						<a class="tab-content__header-link tab-content__header-link--view" id="view-link" href="#">
 							<i class="fas fa-caret-down"></i>
 							<i class="fas fa-table"></i>
 							<span class="tab-content__header-link--title">Main View</span>
 						</a>
 
-						<div class="dropdown-menu dropdown-menu-view" aria-labelledby="dropdownMenuLink">
+						<div class="dropdown-menu dropdown-menu-view">
 							<div class="custom-input-wrap">
 								<input type="text" name="" id="" placeholder="Find a view">
 								<span class="custom-input-check">
@@ -101,11 +98,11 @@
 
 							<div class="dropdown-menu__bottom-line">
 								<span>Add a view:</span>
-								<a href="">Grid</a>
-								<a href="">Form</a>
-								<a href="">Calendar</a>
-								<a href="">Gallery</a>
-								<a href="">Kanban</a>
+								<a href="#">Grid</a>
+								<a href="#">Form</a>
+								<a href="#">Calendar</a>
+								<a href="#">Gallery</a>
+								<a href="#">Kanban</a>
 							</div>
 						</div>
 					</div>
@@ -119,37 +116,37 @@
 						</a>
 						
 						<div class="dropdown show dropdown-menufilter">
-							<a class="tab-content__header-options-item" href="#" role="button" id="dropdownMenuLinkFilter" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+							<a class="tab-content__header-options-item" id="filter-link" href="#">
 								<i class="fas fa-align-center"></i> Filter
 							</a>
 
-							<div class="dropdown-menu dropdown-menu-filter" aria-labelledby="dropdownMenuLinkFilter">
+							<div class="dropdown-menu dropdown-menu-filter">
 									
 								<div class="dropdown-menu-filter__line">
 									<div class="dropdown-menu__filter-item">
 										<a href="#" class="">
-												<i class="fas fa-times fa-xs"></i>
+											<i class="fas fa-times fa-xs"></i>
 										</a>
 										<span>Where</span>
 									</div>
-									<select>
-										<option selected>Name</option>
-										<option>Partners</option>
-										<option>Products Discussed</option>
-										<option>Size of Opportunity</option>
-										<option>Active</option>
-										<option>Estimated time of close</option>
-										<option>Contracts</option>
-										<option>Contract stage</option>
-										<option>Long text</option>
-									</select>  
-									<select name="" id="" class="filter-select">
-										<option value="1">contains</option>
-										<option value="2">does not contain</option>
-										<option value="3">is</option>
-										<option value="4">is not</option>
-										<option value="5">is empty</option>
-										<option value="6">is not empty</option>
+									<select class="selectpicker" data-live-search="true">
+										<option data-content="<span class='selectpicker-option'>Name</span>" selected>Name</option>
+										<option data-content="<span class='selectpicker-option'>Partners</span>">Partners</option>
+										<option data-content="<span class='selectpicker-option'>Products Discussed</span>">Products Discussed</option>
+										<option data-content="<span class='selectpicker-option'>Size of Opportunity</span>">Size of Opportunity</option>
+										<option data-content="<span class='selectpicker-option'>Active</span>">Active</option>
+										<option data-content="<span class='selectpicker-option'>Estimated time of close</span>">Estimated time of close</option>
+										<option data-content="<span class='selectpicker-option'>Contracts</span>">Contracts</option>
+										<option data-content="<span class='selectpicker-option'>Contract stage</span>">Contract stage</option>
+										<option data-content="<span class='selectpicker-option'>Long text</span>">Long text</option>
+									</select>
+									<select class="selectpicker " data-live-search="true">
+										<option data-content="<span class='selectpicker-option'>contains</span>" selected>contains</option>
+										<option data-content="<span class='selectpicker-option'>does not contain</span>">does not contain</option>
+										<option data-content="<span class='selectpicker-option'>is</span>">is</option>
+										<option data-content="<span class='selectpicker-option'>is not</span>">is not</option>
+										<option data-content="<span class='selectpicker-option'>is empty</span>">is empty</option>
+										<option data-content="<span class='selectpicker-option'>is not empty</span>">is not empty</option>
 									</select>
 									<input class="filter-input" type="text" name="" id="">
 								</div>
@@ -189,11 +186,11 @@
 
 					<div class="dropdown show search-dropdown-wrap">
 
-						<a href="#" class="tab-content__header-options-item item--search" href="#" role="button" id="dropdownMenuSearch" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+						<a href="#" class="tab-content__header-options-item item--search" href="#" id="search-link">
 							<i class="fas fa-search"></i>
 						</a>
 
-						<div class="dropdown-menu dropdown-menu-right dropdown-menu-search" aria-labelledby="dropdownMenuSearch">
+						<div class="dropdown-menu dropdown-menu-right dropdown-menu-search">
 							
 							<div class="">
 								<input type="text" name="" id="" placeholder="Find a view">
@@ -317,10 +314,6 @@
 								</tr>
 							</tbody>
 						</table>
-						
-						
-
-						
 					</div>
 
 				</div>
