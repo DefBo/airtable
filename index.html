@@ -110,10 +110,138 @@
 					<a class="tab-content__header-link--group" href="#">
 						<i class="fas fa-users"></i>
 					</a>
+
+
 					<div class="tab-content__header-options-wrap">
-						<a href="#" class="tab-content__header-options-item">
-							<i class="fas fa-eye-slash"></i> Hide fields
-						</a>
+						
+						
+						<div class="dropdown show dropdown-menuhide">
+							<a href="#" class="tab-content__header-options-item" id="hide-link">
+								<i class="fas fa-eye-slash"></i> Hide fields	
+							</a>
+
+							<div class="dropdown-menu dropdown-menu-hide">
+								<input type="text" name="" id="" placeholder="Find a field">
+								<ul class="fields-to-hide sortable">
+									
+									<li class="fields-to-hide_option">
+										<label for="field1" style="width: 100%">
+											<div class="custom-check">
+												<input data-index="2" id="field1" type="checkbox" class="fields-to-hide_check" checked/>
+												<label for="field1"></label>
+											</div>
+											<div class="fields-to-hide_name">
+												<i class="fas fa-handshake"></i>Partners
+											</div>
+										</label>
+									</li>
+
+									<li class="fields-to-hide_option">
+										<label for="field2" style="width: 100%">
+											<div class="custom-check">
+												<input data-index="2" id="field2" type="checkbox" class="fields-to-hide_check" checked/>
+												<label for="field2"></label>
+											</div>
+											<div class="fields-to-hide_name">
+												<i class="fas fa-calendar"></i>Date
+											</div>
+										</label>
+									</li>
+
+									<li class="fields-to-hide_option">
+										<label for="field3" style="width: 100%">
+											<div class="custom-check">
+												<input data-index="2" id="field3" type="checkbox" class="fields-to-hide_check" checked/>
+												<label for="field3"></label>
+											</div>
+											<div class="fields-to-hide_name">
+												<i class="fas fa-tasks"></i>Products Discussed
+											</div>
+										</label>
+									</li>
+
+									<li class="fields-to-hide_option">
+										<label for="field4" style="width: 100%">
+											<div class="custom-check">
+												<input data-index="2" id="field4" type="checkbox" class="fields-to-hide_check" checked/>
+												<label for="field4"></label>
+											</div>
+											<div class="fields-to-hide_name">
+												<i class="fas fa-dollar-sign"></i>Size of Opportunity
+											</div>
+										</label>
+									</li>
+
+									<li class="fields-to-hide_option">
+										<label for="field5" style="width: 100%">
+											<div class="custom-check">
+												<input data-index="2" id="field5" type="checkbox" class="fields-to-hide_check" checked/>
+												<label for="field5"></label>
+											</div>
+											<div class="fields-to-hide_name">
+												<i class="fas fa-check-square"></i>Active?
+											</div>
+										</label>
+									</li>
+
+									<li class="fields-to-hide_option">
+										<label for="field6" style="width: 100%">
+											<div class="custom-check">
+												<input data-index="2" id="field6" type="checkbox" class="fields-to-hide_check" checked/>
+												<label for="field6"></label>
+											</div>
+											<div class="fields-to-hide_name">
+												<i class="fas fa-caret-square-down"></i>Estimated time to close
+											</div>
+										</label>
+									</li>
+
+									<li class="fields-to-hide_option">
+										<label for="field7" style="width: 100%">
+											<div class="custom-check">
+												<input data-index="2" id="field7" type="checkbox" class="fields-to-hide_check" checked/>
+												<label for="field7"></label>
+											</div>
+											<div class="fields-to-hide_name">
+												<i class="fas fa-file"></i>Contracts
+											</div>
+										</label>
+									</li>
+
+									<li class="fields-to-hide_option">
+										<label for="field8" style="width: 100%">
+											<div class="custom-check">
+												<input data-index="2" id="field8" type="checkbox" class="fields-to-hide_check" checked/>
+												<label for="field8"></label>
+											</div>
+											<div class="fields-to-hide_name">
+												<i class="fas fa-caret-square-down"></i>Contract stage
+											</div>
+										</label>
+									</li>
+
+									<li class="fields-to-hide_option">
+										<label for="field9" style="width: 100%">
+											<div class="custom-check">
+												<input data-index="2" id="field9" type="checkbox" class="fields-to-hide_check" checked/>
+												<label for="field9"></label>
+											</div>
+											<div class="fields-to-hide_name">
+												<i class="fas fa-align-left"></i>Long text
+											</div>
+										</label>
+									</li>
+								
+								</ul>
+			
+								<div class="menuhide-buttons-line">
+									<a href="#" class="menuhide-hideall-btn">Hide all</a>
+									<a href="#" class="menuhide-showall-btn">Show all</a>
+								</div>	
+									
+							</div>
+
+						</div>
 						
 						<div class="dropdown show dropdown-menufilter">
 							<a class="tab-content__header-options-item" id="filter-link" href="#">
@@ -163,7 +291,6 @@
 
 						</div>
 
-
 						<a href="#" class="tab-content__header-options-item">
 							<i class="fas fa-list-alt"></i> Group
 						</a>
@@ -212,39 +339,69 @@
 						<table class="table table-bordered custom-table">
 							<thead>
 								<tr>
-									<th scope="col" style="min-width: 100px">Name</th>
-									<th scope="col">Partners</th>
-									<th scope="col" style="width: 153px">Date</th>
-									<th scope="col" style="width: 180px">Products Discussed</th>
-									<th scope="col">Size of Opportunity</th>
-									<th scope="col">Active?</th>
-									<th scope="col" style="width: 120px">Estimated time to close</th>
-									<th scope="col">Contracts</th>
-									<th scope="col">Contract stage</th>
-									<th scope="col" style="width: 180px">Long text</th>
+									<th scope="col" style="min-width: 137px;">
+										<i class="fas fa-font"></i>
+										Name
+									</th>
+									<th scope="col" class="field1-col">
+										<i class="fas fa-handshake"></i>
+										Partners
+									</th>
+									<th scope="col" class="field2-col" style="width: 153px">
+										<i class="fas fa-calendar"></i>
+										Date
+									</th>
+									<th scope="col" class="field3-col" style="width: 180px">
+										<i class="fas fa-tasks"></i>
+										Products Discussed
+									</th>
+									<th scope="col" class="field4-col">
+										<i class="fas fa-dollar-sign"></i>
+										Size of Opportunity
+									</th>
+									<th scope="col" class="field5-col">
+										<i class="fas fa-check-square"></i>
+										Active?
+									</th>
+									<th scope="col" class="field6-col" style="width: 120px">
+										<i class="fas fa-caret-square-down"></i>
+										Estimated time to close
+									</th>
+									<th scope="col" class="field7-col">
+										<i class="fas fa-file"></i>
+										Contracts
+									</th>
+									<th scope="col" class="field8-col">
+										<i class="fas fa-caret-square-down"></i>
+										Contract stage
+									</th>
+									<th scope="col" class="field9-col" style="width: 180px">
+										<i class="fas fa-align-left"></i>
+										Long text
+									</th>
 								</tr>
 							</thead>
 							<tbody>
 								<tr>
 									<td>FireBasket Deal</td>
-									<td>FireBasket</td>
-									<td>
+									<td class="field1-col">FireBasket</td>
+									<td class="field2-col">
 										<input id="date" type="date" class="date-input"> 
 									</td>
-									<td class="textarea-cell" contentEditable>We could partner to make a hot sauce branded with our company logo...</td>
-									<td contentEditable>$200,000.00</td>
-									<td>
+									<td class="textarea-cell field3-col" contentEditable>We could partner to make a hot sauce branded with our company logo...</td>
+									<td class="field4-col" contentEditable>$200,000.00</td>
+									<td class="field5-col">
 										<input type="checkbox" name="" id="">
 									</td>
-									<td class="dropdown-cell">
+									<td class="dropdown-cell field6-col">
 										<select class="selectpicker" data-live-search="true">
 											<option data-content="<span class='selectpicker-option period-option-1'>0-2 months</span>" selected>0-2 months</option>
 											<option data-content="<span class='selectpicker-option period-option-2'>2-6 months</span>">2-6 months</option>
 											<option data-content="<span class='selectpicker-option period-option-3'>6+ months</span>">6+ months</option>
 										</select>
 									</td>
-									<td></td>
-									<td class="dropdown-cell">
+									<td class="field7-col"></td>
+									<td class="dropdown-cell field8-col">
 										<select class="selectpicker" data-live-search="true">
 											<option data-content="<span class='selectpicker-option stage-option-1'>Request</span>" selected>Request</option>
 											<option data-content="<span class='selectpicker-option stage-option-2'>Negotiation</span>">Negotiation</option>
@@ -252,28 +409,28 @@
 											<option data-content="<span class='selectpicker-option stage-option-4'>Execution</span>">Execution</option>
 										</select>
 									</td>
-									<td class="textarea-cell" contentEditable></td>
+									<td class="textarea-cell field9-col" contentEditable></td>
 								</tr>
 								<tr>
-									<td>FireBasket Deal</td>
-									<td>FireBasket</td>
-									<td>
+									<td>Earworm Deal</td>
+									<td class="field1-col">FireBasket</td>
+									<td class="field2-col">
 										<input id="date" type="date" class="date-input">
 									</td>
-									<td class="textarea-cell" contentEditable>We could partner to make a hot sauce branded with our company logo...</td>
-									<td contentEditable>$200,000.00</td>
-									<td>
+									<td class="textarea-cell field3-col" contentEditable>We could partner to make a hot sauce branded with our company logo...</td>
+									<td class="field4-col" contentEditable>$200,000.00</td>
+									<td class="field5-col">
 										<input type="checkbox" name="" id="">
 									</td>
-									<td class="dropdown-cell">
+									<td class="dropdown-cell field6-col">
 											<select class="selectpicker" data-live-search="true">
 												<option data-content="<span class='selectpicker-option period-option-1'>0-2 months</span>">0-2 months</option>
 												<option data-content="<span class='selectpicker-option period-option-2'>2-6 months</span>" selected>2-6 months</option>
 												<option data-content="<span class='selectpicker-option period-option-3'>6+ months</span>">6+ months</option>
 											</select>
 										</td>
-									<td></td>
-									<td class="dropdown-cell">
+									<td class="field7-col"></td>
+									<td class="dropdown-cell field8-col">
 										<select class="selectpicker" data-live-search="true">
 											<option data-content="<span class='selectpicker-option stage-option-1'>Request</span>">Request</option>
 											<option data-content="<span class='selectpicker-option stage-option-2'>Negotiation</span>">Negotiation</option>
@@ -281,28 +438,28 @@
 											<option data-content="<span class='selectpicker-option stage-option-4'>Execution</span>" selected>Execution</option>
 										</select>
 									</td>
-									<td class="textarea-cell" contentEditable></td>
+									<td class="textarea-cell field9-col" contentEditable></td>
 								</tr>
 								<tr>
-									<td>FireBasket Deal</td>
-									<td>FireBasket</td>
-									<td>
+									<td>Positronic API</td>
+									<td class="field1-col">FireBasket</td>
+									<td class="field2-col">
 										<input id="date" type="date" class="date-input">
 									</td>
-									<td class="textarea-cell" contentEditable>We could partner to make a hot sauce branded with our company logo...</td>
-									<td contentEditable>$200,000.00</td>
-									<td>
+									<td class="textarea-cell field3-col" contentEditable>We could partner to make a hot sauce branded with our company logo...</td>
+									<td class="field4-col" contentEditable>$200,000.00</td>
+									<td class="field5-col">
 										<input type="checkbox" name="" id="">
 									</td>
-									<td class="dropdown-cell">
+									<td class="dropdown-cell field6-col">
 										<select class="selectpicker" data-live-search="true">
 											<option data-content="<span class='selectpicker-option period-option-1'>0-2 months</span>">0-2 months</option>
 											<option data-content="<span class='selectpicker-option period-option-2'>2-6 months</span>">2-6 months</option>
 											<option data-content="<span class='selectpicker-option period-option-3'>6+ months</span>" selected>6+ months</option>
 										</select>
 									</td>
-									<td></td>
-									<td class="dropdown-cell">
+									<td class="field7-col"></td>
+									<td class="dropdown-cell field8-col">
 										<select class="selectpicker" data-live-search="true">
 											<option data-content="<span class='selectpicker-option stage-option-1'>Request</span>">Request</option>
 											<option data-content="<span class='selectpicker-option stage-option-2'>Negotiation</span>">Negotiation</option>
@@ -310,7 +467,7 @@
 											<option data-content="<span class='selectpicker-option stage-option-4'>Execution</span>">Execution</option>
 										</select>
 									</td>
-									<td class="textarea-cell" contentEditable></td>
+									<td class="textarea-cell field9-col" contentEditable></td>
 								</tr>
 							</tbody>
 						</table>
@@ -319,7 +476,7 @@
 				</div>
 				
 			</div>
-			<div class="tab-pane fade" id="nav-partner" role="tabpanel" aria-labelledby="nav-partner-tab">2</div>
+			<div class="tab-pane fade" id="nav-partner" role="tabpanel" aria-labelledby="nav-partner-tab"></div>
 		</div>
 
 	</div>
