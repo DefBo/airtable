@@ -29,7 +29,7 @@
 					</a>
 				</li>
 				<li class="nav-item nav-oport-tab-wrap">
-					<div class="nav-link active" id="nav-opport-tab" data-toggle="tab" href="#nav-opport" role="tab" aria-controls="nav-opport" aria-selected="true" style="cursor: pointer">
+					<a class="nav-link active" id="nav-opport-tab" data-toggle="tab" href="#nav-opport" role="tab" aria-controls="nav-opport" aria-selected="true">
 						<span id="first-tab-name" class="tab-name">Opportunities</span>
 						<input id="first-tab-input" type="text" value="Opportunities" style="display: none">
 						<div class="dropdown oport-tab-dropdown">
@@ -41,7 +41,7 @@
 							<div class="dropdown-item"><i class="fas fa-copy"></i>Duplicate table</div>
 							<div class="dropdown-item"><i class="fas fa-trash"></i>Delete table</div>
 						</div>
-					</div>
+					</a>
 				</li>
 
 				<li class="nav-item">
@@ -319,7 +319,7 @@
 
 						<div class="dropdown-menu dropdown-menu-right dropdown-menu-search">
 							
-							<div class="">
+							<div>
 								<input type="text" placeholder="Find a view">
 								<a class="dropdown-menu-search__icon-link" href="#">
 									<i class="fas fa-times fa-xs"></i>	
@@ -383,7 +383,35 @@
 							</thead>
 							<tbody>
 								<tr>
-									<td>FireBasket Deal</td>
+									<td class="main-col">
+										<span>1</span>
+										<a class="zoom-button" href="#" data-toggle="modal" data-target=".bd-test1">
+											<i class="fas fa-arrows-alt-v fa-lg"></i>
+										</a>
+										<span>FireBasket Deal</span>
+
+										<div class="modal fade bd-test1" tabindex="-1" role="dialog" aria-hidden="true">
+											<div class="modal-dialog modal-lg">
+										    	<div class="modal-content">
+										      		
+													<div class="modal-header">
+											        	<h5 class="modal-title">Test modal title</h5>
+											        	<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+											          	<span aria-hidden="true">&times;</span>
+											        	</button>
+											      	</div>
+											      	<div class="modal-body">
+											        	<p>Test modal</p>
+											      	</div>
+											      	<div class="modal-footer">
+											        	<button type="button" class="btn btn-primary">Save changes</button>
+											        	<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+											      	</div>
+
+										    	</div>
+										  	</div>
+										</div>
+									</td>
 									<td class="field1-col">FireBasket</td>
 									<td class="field2-col">
 										<input type="date" class="date-input"> 
@@ -412,7 +440,35 @@
 									<td class="textarea-cell field9-col" contentEditable></td>
 								</tr>
 								<tr>
-									<td>Earworm Deal</td>
+									<td class="main-col">
+										<span>2</span>
+										<a class="zoom-button" href="#" data-toggle="modal" data-target=".bd-test2">
+											<i class="fas fa-arrows-alt-v fa-lg"></i>
+										</a>
+										<span>Earworm Deal</span>
+
+										<div class="modal fade bd-test2" tabindex="-1" role="dialog" aria-hidden="true">
+											<div class="modal-dialog modal-lg">
+										    	<div class="modal-content">
+										      		
+													<div class="modal-header">
+											        	<h5 class="modal-title">Test modal title</h5>
+											        	<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+											          	<span aria-hidden="true">&times;</span>
+											        	</button>
+											      	</div>
+											      	<div class="modal-body">
+											        	<p>Test modal</p>
+											      	</div>
+											      	<div class="modal-footer">
+											        	<button type="button" class="btn btn-primary">Save changes</button>
+											        	<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+											      	</div>
+
+										    	</div>
+										  	</div>
+										</div>
+									</td>									
 									<td class="field1-col">FireBasket</td>
 									<td class="field2-col">
 										<input type="date" class="date-input">
@@ -441,7 +497,35 @@
 									<td class="textarea-cell field9-col" contentEditable></td>
 								</tr>
 								<tr>
-									<td>Positronic API</td>
+									<td class="main-col">
+										<span>3</span>
+										<a class="zoom-button" href="#" data-toggle="modal" data-target=".bd-test3">
+											<i class="fas fa-arrows-alt-v fa-lg"></i>
+										</a>
+										<span>Positronic API</span>
+
+										<div class="modal fade bd-test3" tabindex="-1" role="dialog" aria-hidden="true">
+											<div class="modal-dialog modal-lg">
+										    	<div class="modal-content">
+										      		
+													<div class="modal-header">
+											        	<h5 class="modal-title">Test modal title</h5>
+											        	<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+											          	<span aria-hidden="true">&times;</span>
+											        	</button>
+											      	</div>
+											      	<div class="modal-body">
+											        	<p>Test modal</p>
+											      	</div>
+											      	<div class="modal-footer">
+											        	<button type="button" class="btn btn-primary">Save changes</button>
+											        	<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+											      	</div>
+
+										    	</div>
+										  	</div>
+										</div>
+									</td>
 									<td class="field1-col">FireBasket</td>
 									<td class="field2-col">
 										<input type="date" class="date-input">
