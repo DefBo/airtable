@@ -475,64 +475,12 @@
 							</thead>
 							<tbody class="tbody-container">
 								<tr>
-									<td class="main-col"></td>
-									<td class="field1-col"></td>
-									<td class="field2-col"></td>
-									<td class="textarea-cell field3-col" contentEditable></td>
-									<td class="field4-col" contentEditable></td>
-									<td class="field5-col"></td>
-									<td class="dropdown-cell field6-col"></td>
-									<td class="field7-col"></td>
-									<td class="dropdown-cell field8-col"></td>
-									<td class="textarea-cell field9-col" contentEditable></td>
-									<td class="field1-col"></td>
-									<td class="field2-col"></td>
-									<td class="textarea-cell field3-col" contentEditable></td>
-									<td class="field4-col" contentEditable></td>
-									<td class="field5-col"></td>
-									<td class="dropdown-cell field6-col"></td>
-									<td class="field7-col"></td>
-									<td class="dropdown-cell field8-col"></td>
-									<td class="textarea-cell field9-col" contentEditable></td>
-									<td class="field1-col"></td>
-									<td class="field2-col"></td>
-									<td class="textarea-cell field3-col" contentEditable></td>
-									<td class="field4-col" contentEditable></td>
-									<td class="field5-col"></td>
-									<td class="dropdown-cell field6-col"></td>
-									<td class="field7-col"></td>
-									<td class="dropdown-cell field8-col"></td>
-									<td class="textarea-cell field9-col" contentEditable></td>
-								</tr>
-								<tr>
 									<td class="main-col">
 										<span>1</span>
 										<a class="zoom-button" href="#" data-toggle="modal" data-target=".cell-modal-1">
 											<i class="fas fa-arrows-alt-v fa-lg"></i>
 										</a>
 										<span>FireBasket Deal</span>
-
-										<div class="modal fade cell-modal-1" tabindex="-1" role="dialog" aria-hidden="true">
-											<div class="modal-dialog modal-lg">
-										    	<div class="modal-content">
-										      		
-													<div class="modal-header">
-											        	<h5 class="modal-title">FireBasket Deal</h5>
-											        	<button type="button" class="close" data-dismiss="modal" aria-label="Close">
-											          	<span aria-hidden="true">&times;</span>
-											        	</button>
-											      	</div>
-											      	<div class="modal-body">
-											        	<p>Test modal</p>
-											      	</div>
-											      	<div class="modal-footer">
-											        	<button type="button" class="btn btn-primary">Save changes</button>
-											        	<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-											      	</div>
-
-										    	</div>
-										  	</div>
-										</div>
 									</td>
 									<td class="field1-col">FireBasket</td>
 									<td class="field2-col">
@@ -616,7 +564,7 @@
 								<tr>
 									<td class="main-col">
 										<span>2</span>
-										<a class="zoom-button" href="#" data-toggle="modal" data-target=".bd-test2">
+										<a class="zoom-button" href="#" data-toggle="modal" data-target=".earworm-deal">
 											<i class="fas fa-arrows-alt-v fa-lg"></i>
 										</a>
 										<span>Earworm Deal</span>
@@ -703,7 +651,7 @@
 								<tr>
 									<td class="main-col">
 										<span>3</span>
-										<a class="zoom-button" href="#" data-toggle="modal" data-target=".bd-test3">
+										<a class="zoom-button" href="#" data-toggle="modal" data-target=".sign-up-modal">
 											<i class="fas fa-arrows-alt-v fa-lg"></i>
 										</a>
 										<span>Positronic API</span>
@@ -2268,6 +2216,7 @@
 								</tr>
 							</tbody>
 						</table>
+						
 					</div>
 
 				</div>
@@ -2276,7 +2225,249 @@
 			<div class="tab-pane fade" id="nav-partner" role="tabpanel" aria-labelledby="nav-partner-tab"></div>
 		</div>
 
-	</div>
+  </div>
+  
+  <div class="modal fade cell-modal-1" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            
+        <div class="modal-header">
+              <h5 class="modal-title">FireBasket Deal</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <p>Test modal</p>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-primary">Save changes</button>
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            </div>
+
+        </div>
+      </div>
+  </div>
+
+  <div class="modal fade earworm-deal" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+            
+        <div class="modal-header">
+          
+          <h5 class="modal-title">Earworm Deal</h5>
+          
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+
+        </div>
+
+        <div class="modal-body">
+          
+          <div class="earworm-deal-body">
+            
+            <div class="earworm-deal-form">
+              
+              <form>
+
+                <div class="form-field">
+                  <label class="mb-2 mt-2" for="earworm-deal-name">A NAME</label>
+                  <input class="mb-5" type="text" id="earworm-deal-name">
+                </div>
+
+                <div class="form-field">
+                  
+                  <label class="mb-3">
+                    <i class="fas fa-sliders-h mr-1"></i>
+                    PARTNERS
+                  </label>
+
+                  <div class="mb-3">
+                    <button class="big-label">+ Link to a record from Partners</button>
+                  </div>
+
+                  <div class="partners-block mb-5">
+                    
+                    <div class="close-partners-block">
+                      <i class="fas fa-times"></i>
+                    </div>
+
+                    <p class="mb-4 partners-block-title">Earworm</p>
+
+                    <div class="cos">
+                      
+                      <div>
+                        <p class="name mb-2">PARTNER OBJECTIVES</p>
+                        <p class="cos-content">Earworm wants to make their</p>
+                      </div>
+
+                      <div>
+                        <p class="name mb-2">OPPORTUNITIES</p>
+                        <p class="cos-content colored">Earworm Deal</p>
+                      </div>
+
+                      <div>
+                        <p class="name mb-2">INTERACTIONS</p>
+                        <p class="cos-content colored">Reached out</p>
+                      </div>
+                    
+                    </div>
+
+                  </div>
+
+                </div>
+              
+                <div class="form-field">
+                  
+                  <label class="mb-2" for="earworm-deal-products">
+                    <i class="fas fa-align-justify mr-1"></i>
+                    PRODUCTS DISCUSSED
+                  </label>
+                  
+                  <textarea class="mb-5" id="earworm-deal-products" cols="30" rows="10"></textarea>
+                
+                </div>
+                
+                <div class="form-field">
+
+                  <label class="mb-2" for="earworm-deal-opportunity-size">
+                    <i class="fas fa-dollar-sign mr-1"></i>
+                    SIZE OF OPPORTUNITY
+                  </label>
+
+                  <input class="mb-5" type="text" id="earworm-deal-opportunity-size">
+                
+                </div>
+
+                <div class="form-field">
+                  
+                  <label class="mb-2" for="earworm-deal-active">
+                      <i class="fas fa-check-square mr-1"></i>
+                      ACTIVE
+                  </label>
+                  
+                  <input class="mb-5" type="checkbox" id="earworm-deal-active">
+                
+                </div>
+
+                <div class="form-field">
+                  
+                  <label class="mb-2" for="earworm-deal-close-time">
+                    <span class="bordered-icon"><i class="fas fa-caret-down"></i></span>
+                    ESTIMATED TIME TO CLOSE
+                  </label>
+                  
+                  <select class="selectpicker mb-5" data-live-search="true" id="earworm-deal-close-time">
+                    <option data-content="<span class='selectpicker-option period-option-1'>0-2 months</span>" selected>0-2 months</option>
+                    <option data-content="<span class='selectpicker-option period-option-2'>2-6 months</span>">2-6 months</option>
+                    <option data-content="<span class='selectpicker-option period-option-3'>6+ months</span>">6+ months</option>
+                  </select>
+                
+                </div>
+
+                <div class="form-field mb-5">
+                  
+                  <label class="mb-3">
+                    <i class="fas fa-file-alt mr-1"></i>
+                    CONTRACTS
+                  </label>
+
+                  <div>
+                    <button class="big-label">
+                      <i class="fas fa-paperclip mr-1"></i>
+                      Attach file
+                    </button>
+                  </div>
+
+                </div>
+
+                <div class="form-field">
+
+                  <label class="mb-2" for="earworm-deal-contract-stage">
+                    <span class="bordered-icon"><i class="fas fa-caret-down"></i></span>
+                    CONTRACT STAGE
+                  </label>
+                  
+                  <select class="selectpicker mb-5" data-live-search="true" id="earworm-deal-contract-stage">
+                    <option data-content="<span class='selectpicker-option stage-option-1'>Request</span>" selected>Request</option>
+                    <option data-content="<span class='selectpicker-option stage-option-2'>Negotiation</span>">Negotiation</option>
+                    <option data-content="<span class='selectpicker-option stage-option-3'>Approval</span>">Approval</option>
+                    <option data-content="<span class='selectpicker-option stage-option-4'>Execution</span>">Execution</option>
+                  </select>
+                
+                </div>
+
+                <div class="form-field">
+                
+                  <label class="mb-2" for="earworm-deal-longtext">
+                    <i class="fas fa-align-justify mr-1"></i>
+                    LONG TEXT
+                  </label>
+
+                  <textarea class="mb-5" id="earworm-deal-longtext" cols="30" rows="10"></textarea>
+                
+                </div>
+
+                <div class="add-field mb-3">
+                  <button>
+                    + Add a field to this table
+                  </button>
+                </div>
+
+              </form>
+
+            </div>
+
+            <div class="earworm-deal-comments">
+
+            </div>
+          
+          </div>
+        
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade sign-up-modal" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+
+      <div class="modal-content">
+
+        <div class="modal-body">
+          
+          <div class="sign-up-header mb-4">
+            
+            <h5>Sign in</h5>
+
+            <a href="#">Forgot password?</a>
+
+          </div>
+
+          <form>
+
+            <div class="input-field mb-3">
+              <i class="fas fa-envelope"></i>
+              <input type="text" placeholder="Email">
+            </div>
+
+            <div class="input-field mb-3">
+              <i class="fas fa-lock"></i>
+              <input type="password" placeholder="Password">
+            </div>
+
+            <button type="submit">Sign in</button>
+
+          </form>
+        
+        </div>
+
+      </div>
+
+    </div>
+  </div>
 
 	<script src="js/scripts.min.js"></script>
 
