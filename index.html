@@ -295,9 +295,64 @@
 						<a href="#" class="tab-content__header-options-item">
 							<i class="fas fa-list-alt"></i> Group
 						</a>
-						<a href="#" class="tab-content__header-options-item">
-							<i class="fas fa-exchange-alt"></i> Sort
-						</a>
+
+
+
+						<div class="dropdown show dropdown-menusort">
+							<a class="tab-content__header-options-item" id="sort-link" href="#">
+								<i class="fas fa-exchange-alt"></i> Sort
+							</a>
+
+							<div class="dropdown-menu dropdown-menu-sort">
+									
+								<div class="dropdown-menu-sort__line">
+									<div class="dropdown-menu__sort-item">
+										<a href="#" class="">
+											<i class="fas fa-times fa-xs"></i>
+										</a>
+										<span>Sort by</span>
+									</div>
+									<select class="selectpicker" data-live-search="true">
+										<option data-content="<span class='selectpicker-option'>Name</span>" selected>Name</option>
+										<option data-content="<span class='selectpicker-option'>Partners</span>">Partners</option>
+										<option data-content="<span class='selectpicker-option'>Products Discussed</span>">Products Discussed</option>
+										<option data-content="<span class='selectpicker-option'>Size of Opportunity</span>">Size of Opportunity</option>
+										<option data-content="<span class='selectpicker-option'>Active</span>">Active</option>
+										<option data-content="<span class='selectpicker-option'>Estimated time of close</span>">Estimated time of close</option>
+										<option data-content="<span class='selectpicker-option'>Contracts</span>">Contracts</option>
+										<option data-content="<span class='selectpicker-option'>Contract stage</span>">Contract stage</option>
+										<option data-content="<span class='selectpicker-option'>Long text</span>">Long text</option>
+									</select>
+									<span class="sort-span">from</span>
+
+
+									<div class="can-toggle can-toggle--size-small">
+									  <input id="a" type="checkbox">
+									  <label for="a">
+									    <div class="can-toggle__switch" data-checked="Z &rarr; A" data-unchecked="A &rarr; Z"></div>
+									  </label>
+									</div>
+
+
+								</div>
+								<br />
+								
+								<div class="dropdown-menu-sort__addline">
+									<a href="#">
+										<i class="fas fa-plus fa-xs"></i>
+										<span>Add sort</span>
+									</a>
+								</div>
+
+							</div>
+
+						</div>
+
+
+
+
+
+
 						<a href="#" class="tab-content__header-options-item">
 							<i class="fas fa-paint-brush"></i> Color
 						</a>
@@ -366,7 +421,7 @@
 							<thead class="fixed-thead" id="fixed-thead">
 								<tr>
 									<!-- style="min-width: 137px;" -->
-									<th scope="col" class="main-col-test">
+									<th scope="col" class="main-col-test context-menu">
 										<i class="fas fa-font"></i>
 										Name
 									</th>
